@@ -1,15 +1,15 @@
-using Hyperledger.Aries.Extensions;
+using Hyperledger.Aries;
 using Hyperledger.Aries.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configuración para RED REAL (no modo simulado)
-builder.Services.AddAriesFramework(builder.Configuration);
-
-
-
-
-
+// Configuración para RED REAL de Aries (no modo simulado)
+builder.Services.AddAriesFramework(options =>
+{
+    // Enalzar "Agent" de appsettings.json con las opciones de Aries
+    builder.Configuration.GetSection("Agent").Bind(options);
+});
 
 // Add services to the container.
 
