@@ -1,0 +1,319 @@
+name: Building All Containers
+
+on:
+  push:
+    branches: [ 'main' ]
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [ 'main' ]
+  workflow_dispatch:
+
+jobs:
+  workflow_setup:
+    name: Setup variables 
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    outputs:
+      repo_owner: ${{ steps.repo_owner.outputs.lowercase }}
+      os_matrix: "{\"os_version\":[\"debian11\",\"debian12\",\"ubuntu20\",\"ubuntu22\"]}"
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+      - name: Lowercase repo owner
+        id: repo_owner
+        run: echo "lowercase=$(echo ${{ github.repository_owner }} | tr \"[:upper:]\" \"[:lower:]\")" >>$GITHUB_OUTPUT
+        shell: bash
+
+  build_nodes:
+    name: Build node images
+    runs-on: ubuntu-latest
+    needs: workflow_setup
+    strategy:
+      matrix: ${{ fromJson(needs.workflow_setup.outputs.os_matrix) }}
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Cache Docker layers
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ matrix.os_version }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-buildx-${{ matrix.os_version }}
+            ${{ runner.os }}-buildx
+      - name: Build node image based on ${{ matrix.os_version }}
+        uses: docker/build-push-action@v6
+        with:
+          file: build/Dockerfile.${{ matrix.os_version }}
+          context: ./build
+          push: false
+          tags: indy_node:${{ matrix.os_version}}
+          outputs: type=docker,dest=/tmp/indy_node_${{ matrix.os_version }}.tar
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new
+      - name: Upload docker image artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: indy_node_${{ matrix.os_version }}
+          path: /tmp/indy_node_${{ matrix.os_version }}.tar
+          retention-days: 1
+      # Temp fix
+      # https://github.com/docker/build-push-action/blob/master/docs/advanced/cache.md#github-cache
+      # https://github.com/docker/build-push-action/issues/252
+      # https://github.com/moby/buildkit/issues/1896
+      - name: Move cache
+        run: |
+          rm -rf /tmp/.buildx-cache
+          mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+
+  build_controller:
+    name: Build controller image
+    runs-on: ubuntu-latest
+    needs: workflow_setup
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Cache Docker layers
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-controler
+          restore-keys: |
+            ${{ runner.os }}-buildx-controller
+            ${{ runner.os }}-buildx
+      - name: Build node controller image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./controller
+          push: false
+          tags: indy_node_controller
+          outputs: type=docker,dest=/tmp/indy_node_controller.tar
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new
+      - name: Upload docker image artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: indy_node_controller
+          path: /tmp/indy_node_controller.tar
+          retention-days: 1
+      - name: Move cache
+        run: |
+          rm -rf /tmp/.buildx-cache
+          mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+
+  test_node_and_controller:
+    runs-on: ubuntu-latest
+    needs: [workflow_setup, build_controller, build_nodes]
+    strategy:
+      matrix: ${{ fromJson(needs.workflow_setup.outputs.os_matrix) }}
+      fail-fast: false
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        with:
+          driver-opts: network=host
+      - name: Download node artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: indy_node_${{ matrix.os_version }}
+          path: /tmp
+      - name: Download controller artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: indy_node_controller
+          path: /tmp
+      - name: Load node and controller image
+        run: |
+          docker load --input /tmp/indy_node_${{ matrix.os_version }}.tar
+          docker load --input /tmp/indy_node_controller.tar
+      - name: Setup test network configs
+        run: cd test && ./init-test-network.sh indy_node:${{ matrix.os_version }}
+      - name: Start test network
+        run: cd test && env SOCK=/var/run/docker.sock IMAGE_NAME_NODE=indy_node:${{ matrix.os_version }} IMAGE_NAME_CONTROLLER=indy_node_controller docker compose up -d
+      - name: Get Ledger State
+        id: ledger
+        run: |
+          echo "Waiting 30 seconds for the ledger browser to start..."
+          sleep 30
+          cd test 
+          echo "::group::ParseValidatorOutput"
+          ./parse_validator_info.sh
+          echo "::endgroup::"
+      - name: Safe ledger_state.json for later inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.os_version }}-tmp-test-${{ github.sha }}-ledger_state.json
+          path: ledger_state.json
+          retention-days: 7
+      - name: Fail if ledger is not in sync
+        if: |
+          steps.ledger.outputs.n1_synced != 'true' ||
+          steps.ledger.outputs.n2_synced != 'true' ||
+          steps.ledger.outputs.n3_synced != 'true' ||
+          steps.ledger.outputs.n4_synced != 'true' ||
+          steps.ledger.outputs.n1_freshness != 'true' ||
+          steps.ledger.outputs.n2_freshness != 'true' ||
+          steps.ledger.outputs.n3_freshness != 'true' ||
+          steps.ledger.outputs.n4_freshness != 'true' ||
+          steps.ledger.outputs.n1_unreachable != 0 ||
+          steps.ledger.outputs.n2_unreachable != 0 ||
+          steps.ledger.outputs.n3_unreachable != 0 ||
+          steps.ledger.outputs.n4_unreachable != 0
+        uses: actions/github-script@v7
+        with:
+          script: core.setFailed('${{ matrix.os_version }} - Not all nodes are in sync!')
+      - name: Send node restart command
+        id: node-restart
+        run: |
+          echo "::set-output name=restart-time::$(date +%s)"
+          cd test && echo -e "indy-cli\npool create test gen_txn_file=/pool_transactions_genesis\npool connect test\nwallet create wallet key=1234\nwallet open wallet key=1234\ndid new seed=000000000000000000000000Trustee1\ndid use V4SGRU86Z58d6TV7PBUe6f\nledger pool-restart action=start" | docker compose run indy-cli
+      - name: Get node restart status
+        id: nodes_restarted
+        run: |
+          sleep 60
+          OUTPUT="$(docker container ls --filter "name=node" --format="{{.Names}}" | xargs -n1 docker container inspect --format="{{.State.StartedAt}}" | xargs -I {} date -d {} +%s)"
+          echo "::set-output name=count::$(echo "$OUTPUT" | awk -F= '$1>${{ steps.node-restart.outputs.restart-time }}' | wc -l)"
+      - name: Fail if not all nodes restarted      
+        if: steps.nodes_restarted.outputs.count != 4
+        uses: actions/github-script@v7
+        with:
+          script: core.setFailed('${{ matrix.os_version }} - Not all nodes have been restarted')
+
+  statusCheck:
+    name: statusCheck
+    runs-on: ubuntu-latest
+    needs: [workflow_setup, test_node_and_controller]
+    if: ${{ success() }}
+    steps:
+      - run: 'echo "Just a status Check (Always true, when executed) for branch protection rules(blocks merging while test are running and if tests fail)." '
+
+  push_node:
+    runs-on: ubuntu-latest
+    needs: [workflow_setup, test_node_and_controller]
+    if: ${{ github.event_name != 'pull_request' }}
+    strategy:
+      matrix: ${{ fromJson(needs.workflow_setup.outputs.os_matrix) }}
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+      - name: indy-node-version
+        id: indy-node-version
+        shell: bash
+        run: |
+          export nodeVersion=$(sed "s/~/-/" <<<$(grep -oP -m 1 "indy-node=\"?\d+.\d+.\d+((~|.)?rc\d+)?\"?" build/Dockerfile.${{ matrix.os_version }} | grep -oP "\d+.\d+.\d+((~|.|-)?rc\d+)?"))
+          if [[ "${nodeVersion}" == "" ]]; then export nodeVersion=$(sed "s/~/-/" <<<$(grep -oP -m 1 "indy-node/releases/download/v\"?\d+.\d+.\d+((~|.)?rc\d+)?\"?" build/Dockerfile.${{ matrix.os_version }} | grep -oP "\d+.\d+.\d+((~|.|-)?rc\d+)?")); fi
+          if [[ "${nodeVersion}" == "" ]]; then echo "::error::could determine node version for tagging."; exit 1; fi
+          echo "::debug::IndyNode Version is ${nodeVersion}"
+          echo "::group::DEBUG"  
+          echo "IndyNode Version is ${nodeVersion}"
+          echo "::endgroup::"
+          echo "nodeVersion=${nodeVersion}">> $GITHUB_OUTPUT
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Cache Docker layers
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ matrix.os_version }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-buildx-${{ matrix.os_version }}
+            ${{ runner.os }}-buildx
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Meta for indy_node
+        id: meta_indy_node
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ needs.workflow_setup.outputs.repo_owner }}/indy-node-container/indy_node
+          flavor: |
+            prefix=${{ steps.indy-node-version.outputs.nodeVersion }}-${{ matrix.os_version }}-
+            latest=auto
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+          labels: |
+            org.opencontainers.image.title=Indy Node Container
+            org.opencontainers.image.description=Indy Node Container based on ${{ matrix.os_version }}
+            org.opencontainers.image.vendor=Hyperledger
+      - name: Push indy node based on ${{ matrix.os_version }}
+        uses: docker/build-push-action@v6
+        with:
+          file: build/Dockerfile.${{ matrix.os_version }}
+          context: ./build
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta_indy_node.outputs.tags }}
+          labels: ${{ steps.meta_indy_node.outputs.labels }}
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new
+      - name: Move cache
+        run: |
+          rm -rf /tmp/.buildx-cache
+          mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+         
+  push_controller:
+    runs-on: ubuntu-latest
+    needs: [workflow_setup, test_node_and_controller]
+    if: ${{ github.event_name != 'pull_request' }}
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Cache Docker layers
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-controler
+          restore-keys: |
+            ${{ runner.os }}-buildx-controller
+            ${{ runner.os }}-buildx
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Meta for indy_node_controller
+        id: meta_indy_node_controller
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ needs.workflow_setup.outputs.repo_owner }}/indy-node-container/indy_node_controller
+          flavor: |
+            onlatest=true
+            latest=auto
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+          labels: |
+            org.opencontainers.image.title=Indy Node Container Controller
+            org.opencontainers.image.description=Indy Node Container Controller
+            org.opencontainers.image.vendor=Hyperledger
+      - name: Push indy node controller
+        uses: docker/build-push-action@v6
+        with:
+          context: ./controller
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta_indy_node_controller.outputs.tags }}
+          labels: ${{ steps.meta_indy_node_controller.outputs.labels }}
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new
+      - name: Move cache
+        run: |
+          rm -rf /tmp/.buildx-cache
+          mv /tmp/.buildx-cache-new /tmp/.buildx-cache

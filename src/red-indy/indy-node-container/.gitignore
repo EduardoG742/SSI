@@ -1,0 +1,13 @@
+__pycache__
+keys
+*~
+*__pycache__
+*/*lib_indy
+*/*etc_indy/indy.env
+.cli.env
+.node.env
+.history
+trivy-reports
+test/etc_indy/node*
+.vscode
+.idea

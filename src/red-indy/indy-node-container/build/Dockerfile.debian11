@@ -1,0 +1,68 @@
+# This container is to run indy-node.
+# This file is part of https://github.com/hyperledger/indy-node-container .
+# Copyright 2021-2025 by all people listed in https://github.com/hyperledger/indy-node-container/blob/main/NOTICE , see
+# https://github.com/hyperledger/indy-node-container/blob/main/LICENSE for the license information.
+
+FROM python:3.8-slim-bullseye
+
+LABEL org.opencontainers.image.description="Debian 11 based image to run indy-node. See https://github.com/hyperledger/indy-node-container"
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install environment
+RUN apt-get update -y && apt-get upgrade -y && apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    software-properties-common \
+    iproute2 \
+    gnupg2 \
+    && apt-get autoremove -y
+
+# Bionic-security for libssl1.0.0
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3B4FE6ACC0B21F32 \
+    && echo "deb http://security.ubuntu.com/ubuntu bionic-security main"  >> /etc/apt/sources.list
+
+# Hyperledger Artifactory
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 9692C00E657DDE61 \
+    && echo "deb https://hyperledger.jfrog.io/artifactory/indy focal stable" >> /etc/apt/sources.list \
+    # For Ursa
+    && echo "deb https://hyperledger.jfrog.io/artifactory/indy bionic master" >> /etc/apt/sources.list \
+    # Prioritize packages from hyperledger.jfrog.io
+    && printf '%s\n%s\n%s\n' 'Package: *' 'Pin: origin hyperledger.jfrog.io' 'Pin-Priority: 1001' >> /etc/apt/preferences
+
+RUN pip3 install -U \
+    # Required by setup.py
+    'setuptools==50.3.2'
+
+RUN apt-get update -y && \
+    apt-get install -y --allow-downgrades \
+    indy-node="1.13.2" && \
+    apt-get autoremove -y && \
+    apt-get clean
+
+ENV PYTHONPATH="/usr/local/lib/python3.8:/usr/local/lib/python3.8/dist-packages/:/usr/local/lib/python3.5/dist-packages/:/usr/local/lib/python3.9/dist-packages/"
+
+# use python 3.8
+RUN rm /usr/bin/python3 && ln -s /usr/local/bin/python3 /usr/bin/python3
+
+# find lib ursa
+RUN ln -s /usr/lib/ursa/libursa.so /usr/lib/libursa.so
+
+# `sha3` is broken -> use `pysha3` instead
+RUN rm -rf /usr/local/lib/python3.8/dist-packages/*sha3*
+
+# needed for pip install pysha3
+RUN apt-get install -y gcc
+
+# missing python packages
+RUN pip install pysha3 zipp six rocksdb
+
+WORKDIR /home/indy
+
+COPY init_and_run.sh ./
+
+CMD ["./init_and_run.sh"]
+
+VOLUME ["/var/log/indy"]
+
+RUN rm -rf /var/lib/apt/lists/*
