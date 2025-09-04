@@ -1,0 +1,828 @@
+2025-09-04 06:24:55,032|INFO|looper.py|Starting up indy-node
+2025-09-04 06:24:55,233|INFO|ledger.py|Starting ledger...
+2025-09-04 06:24:55,293|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:24:55,509|INFO|ledger.py|Recovered tree in 0.21600991900049848 seconds
+2025-09-04 06:24:55,676|INFO|ledger.py|Starting ledger...
+2025-09-04 06:24:55,771|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:24:55,973|INFO|ledger.py|Recovered tree in 0.22044038199965144 seconds
+2025-09-04 06:24:55,975|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/pool_transactions_genesis
+2025-09-04 06:24:56,190|INFO|ledger.py|Starting ledger...
+2025-09-04 06:24:56,273|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:24:56,494|INFO|ledger.py|Recovered tree in 0.22160631000042486 seconds
+2025-09-04 06:24:56,495|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:24:56,707|INFO|ledger.py|Starting ledger...
+2025-09-04 06:24:56,823|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:24:56,964|INFO|ledger.py|Recovered tree in 0.14099639199957892 seconds
+2025-09-04 06:24:57,509|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:24:57,526|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:24:57,543|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:24:57,644|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:24:57,644|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:24:57,683|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:24:57,684|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:24:57,685|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:24:57,686|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:24:57,686|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:24:57,688|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:24:57,689|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:24:57,692|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:24:57,693|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:24:57,693|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:24:57,694|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:24:57,695|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:24:57,706|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:25:03,908|INFO|looper.py|Starting up indy-node
+2025-09-04 06:25:04,149|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:04,216|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:04,432|INFO|ledger.py|Recovered tree in 0.21551110000109475 seconds
+2025-09-04 06:25:04,654|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:04,737|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:04,954|INFO|ledger.py|Recovered tree in 0.21712479699999676 seconds
+2025-09-04 06:25:04,955|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/pool_transactions_genesis
+2025-09-04 06:25:05,243|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:05,332|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:05,573|INFO|ledger.py|Recovered tree in 0.24664561999998114 seconds
+2025-09-04 06:25:05,574|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:25:05,873|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:05,957|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:06,196|INFO|ledger.py|Recovered tree in 0.23947820300054445 seconds
+2025-09-04 06:25:06,816|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:25:06,836|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:06,855|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:06,999|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:25:06,999|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:25:07,042|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:07,043|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:07,043|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:07,045|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:07,046|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:25:07,048|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:25:07,049|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:25:07,053|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:25:07,054|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:25:07,054|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:25:07,056|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:25:07,057|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:25:07,068|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:25:13,465|INFO|looper.py|Starting up indy-node
+2025-09-04 06:25:13,655|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:13,720|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:13,933|INFO|ledger.py|Recovered tree in 0.21272852699985378 seconds
+2025-09-04 06:25:14,174|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:14,263|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:14,501|INFO|ledger.py|Recovered tree in 0.23801570199975686 seconds
+2025-09-04 06:25:14,503|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/pool_transactions_genesis
+2025-09-04 06:25:14,755|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:14,836|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:15,040|INFO|ledger.py|Recovered tree in 0.20440978899932816 seconds
+2025-09-04 06:25:15,041|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:25:15,324|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:15,466|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:15,683|INFO|ledger.py|Recovered tree in 0.21719495300021663 seconds
+2025-09-04 06:25:16,196|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:25:16,218|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:16,240|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:16,354|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:25:16,355|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:25:16,403|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:16,404|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:16,405|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:16,405|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:16,406|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:25:16,408|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:25:16,409|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:25:16,414|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:25:16,415|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:25:16,416|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:25:16,417|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:25:16,418|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:25:16,430|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.
+2025-09-04 06:25:25,138|INFO|looper.py|Starting up indy-node
+2025-09-04 06:25:25,432|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:25,515|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:25,719|INFO|ledger.py|Recovered tree in 0.20477987100093742 seconds
+2025-09-04 06:25:25,952|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:26,052|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:26,282|INFO|ledger.py|Recovered tree in 0.22930777500005206 seconds
+2025-09-04 06:25:26,283|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/pool_transactions_genesis
+2025-09-04 06:25:26,548|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:26,631|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:26,835|INFO|ledger.py|Recovered tree in 0.2036709570002131 seconds
+2025-09-04 06:25:26,836|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:25:27,089|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:27,167|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:27,373|INFO|ledger.py|Recovered tree in 0.20613269999921613 seconds
+2025-09-04 06:25:27,941|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:25:27,985|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:28,010|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:28,136|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:25:28,137|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:25:28,175|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:28,176|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:28,176|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:28,178|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:28,178|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:25:28,181|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:25:28,182|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:25:28,187|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:25:28,187|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:25:28,189|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:25:28,190|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:25:28,193|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:25:28,204|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:25:35,807|INFO|looper.py|Starting up indy-node
+2025-09-04 06:25:36,093|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:36,185|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:36,384|INFO|ledger.py|Recovered tree in 0.1993416730001627 seconds
+2025-09-04 06:25:36,623|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:36,701|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:36,970|INFO|ledger.py|Recovered tree in 0.26889936399857106 seconds
+2025-09-04 06:25:36,971|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/pool_transactions_genesis
+2025-09-04 06:25:37,239|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:37,312|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:37,519|INFO|ledger.py|Recovered tree in 0.20662534500115726 seconds
+2025-09-04 06:25:37,519|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:25:37,826|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:37,919|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:38,125|INFO|ledger.py|Recovered tree in 0.20599874400068074 seconds
+2025-09-04 06:25:38,664|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:25:38,681|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:38,698|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:38,808|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:25:38,809|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:25:38,839|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:38,840|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:38,843|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:38,843|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:38,844|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:25:38,846|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:25:38,847|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:25:38,851|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:25:38,852|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:25:38,852|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:25:38,853|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:25:38,854|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:25:38,866|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.
+2025-09-04 06:25:44,359|INFO|looper.py|Starting up indy-node
+2025-09-04 06:25:44,597|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:44,677|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:44,884|INFO|ledger.py|Recovered tree in 0.2067953590012621 seconds
+2025-09-04 06:25:45,118|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:45,216|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:45,568|INFO|ledger.py|Recovered tree in 0.3513262399992527 seconds
+2025-09-04 06:25:45,570|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/pool_transactions_genesis
+2025-09-04 06:25:45,977|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:46,063|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:46,306|INFO|ledger.py|Recovered tree in 0.24234509900088597 seconds
+2025-09-04 06:25:46,307|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:25:46,651|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:46,766|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:46,983|INFO|ledger.py|Recovered tree in 0.21763582300081907 seconds
+2025-09-04 06:25:47,697|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:25:47,717|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:47,738|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:47,869|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:25:47,870|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:25:47,908|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:47,909|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:47,909|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:47,911|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:47,912|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:25:47,914|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:25:47,915|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:25:47,920|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:25:47,921|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:25:47,922|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:25:47,923|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:25:47,925|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:25:47,937|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:25:54,583|INFO|looper.py|Starting up indy-node
+2025-09-04 06:25:54,797|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:54,869|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:55,072|INFO|ledger.py|Recovered tree in 0.20338618400091946 seconds
+2025-09-04 06:25:55,289|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:55,369|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:55,585|INFO|ledger.py|Recovered tree in 0.21597716699943703 seconds
+2025-09-04 06:25:55,586|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/pool_transactions_genesis
+2025-09-04 06:25:55,830|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:55,905|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:56,097|INFO|ledger.py|Recovered tree in 0.19207983299929765 seconds
+2025-09-04 06:25:56,098|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:25:56,361|INFO|ledger.py|Starting ledger...
+2025-09-04 06:25:56,441|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:25:56,661|INFO|ledger.py|Recovered tree in 0.22048488399923372 seconds
+2025-09-04 06:25:57,300|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:25:57,321|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:57,344|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:25:57,473|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:25:57,474|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:25:57,521|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:57,522|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:57,522|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:57,523|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:25:57,525|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:25:57,526|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:25:57,528|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:25:57,531|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:25:57,532|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:25:57,533|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:25:57,534|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:25:57,535|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:25:57,547|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:26:04,287|INFO|looper.py|Starting up indy-node
+2025-09-04 06:26:04,523|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:04,600|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:04,841|INFO|ledger.py|Recovered tree in 0.24121063599886838 seconds
+2025-09-04 06:26:05,137|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:05,229|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:05,471|INFO|ledger.py|Recovered tree in 0.2418096310011606 seconds
+2025-09-04 06:26:05,472|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/pool_transactions_genesis
+2025-09-04 06:26:05,780|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:05,872|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:06,104|INFO|ledger.py|Recovered tree in 0.23263046499960183 seconds
+2025-09-04 06:26:06,106|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:26:06,419|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:06,501|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:06,725|INFO|ledger.py|Recovered tree in 0.2240646120008023 seconds
+2025-09-04 06:26:07,315|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:26:07,342|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:07,377|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:07,505|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:26:07,506|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:26:07,562|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:07,566|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:07,567|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:07,568|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:07,569|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:26:07,571|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:26:07,574|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:26:07,579|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:26:07,580|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:26:07,581|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:26:07,583|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:26:07,585|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:26:07,596|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:26:14,865|INFO|looper.py|Starting up indy-node
+2025-09-04 06:26:15,145|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:15,222|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:15,419|INFO|ledger.py|Recovered tree in 0.19745585800046683 seconds
+2025-09-04 06:26:15,636|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:15,724|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:15,948|INFO|ledger.py|Recovered tree in 0.2241650270007085 seconds
+2025-09-04 06:26:15,949|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/pool_transactions_genesis
+2025-09-04 06:26:16,176|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:16,246|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:16,429|INFO|ledger.py|Recovered tree in 0.1834927649997553 seconds
+2025-09-04 06:26:16,430|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:26:16,691|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:16,763|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:16,957|INFO|ledger.py|Recovered tree in 0.19410175899975002 seconds
+2025-09-04 06:26:17,491|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:26:17,509|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:17,532|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:17,648|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:26:17,649|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:26:17,685|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:17,686|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:17,687|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:17,688|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:17,689|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:26:17,691|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:26:17,692|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:26:17,696|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:26:17,697|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:26:17,698|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:26:17,699|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:26:17,700|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:26:17,712|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.
+2025-09-04 06:26:27,348|INFO|looper.py|Starting up indy-node
+2025-09-04 06:26:27,593|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:27,673|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:27,915|INFO|ledger.py|Recovered tree in 0.24114477399962198 seconds
+2025-09-04 06:26:28,208|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:28,358|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:28,619|INFO|ledger.py|Recovered tree in 0.26086909900004684 seconds
+2025-09-04 06:26:28,620|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/pool_transactions_genesis
+2025-09-04 06:26:28,869|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:28,943|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:29,126|INFO|ledger.py|Recovered tree in 0.18294756799878087 seconds
+2025-09-04 06:26:29,127|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:26:29,374|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:29,442|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:29,652|INFO|ledger.py|Recovered tree in 0.21019329900082084 seconds
+2025-09-04 06:26:30,122|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:26:30,138|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:30,155|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:30,255|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:26:30,255|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:26:30,311|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:30,312|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:30,320|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:30,326|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:30,327|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:26:30,338|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:26:30,348|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:26:30,352|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:26:30,353|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:26:30,354|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:26:30,355|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:26:30,356|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:26:30,368|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:26:37,115|INFO|looper.py|Starting up indy-node
+2025-09-04 06:26:37,324|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:37,410|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:37,613|INFO|ledger.py|Recovered tree in 0.20383790100095212 seconds
+2025-09-04 06:26:37,850|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:37,946|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:38,180|INFO|ledger.py|Recovered tree in 0.23377033799988567 seconds
+2025-09-04 06:26:38,181|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/pool_transactions_genesis
+2025-09-04 06:26:38,559|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:38,646|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:38,829|INFO|ledger.py|Recovered tree in 0.1833980060000613 seconds
+2025-09-04 06:26:38,830|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:26:39,083|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:39,153|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:39,364|INFO|ledger.py|Recovered tree in 0.21030810899901553 seconds
+2025-09-04 06:26:40,188|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:26:40,220|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:40,252|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:40,401|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:26:40,404|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:26:40,509|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:40,510|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:40,513|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:40,515|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:40,516|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:26:40,523|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:26:40,526|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:26:40,530|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:26:40,532|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:26:40,533|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:26:40,539|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:26:40,541|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:26:40,553|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.
+2025-09-04 06:26:47,328|INFO|looper.py|Starting up indy-node
+2025-09-04 06:26:47,657|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:47,742|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:47,944|INFO|ledger.py|Recovered tree in 0.2016405640006269 seconds
+2025-09-04 06:26:48,165|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:48,253|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:48,485|INFO|ledger.py|Recovered tree in 0.2313958750000893 seconds
+2025-09-04 06:26:48,900|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:49,001|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:49,230|INFO|ledger.py|Recovered tree in 0.2290840860005119 seconds
+2025-09-04 06:26:49,231|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:26:49,485|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:49,562|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:49,758|INFO|ledger.py|Recovered tree in 0.1955409360016347 seconds
+2025-09-04 06:26:50,281|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:26:50,298|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:50,314|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:50,408|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:26:50,408|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:26:50,440|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:50,440|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:50,441|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:50,441|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:50,442|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:26:50,444|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:26:50,445|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:26:50,448|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:26:50,449|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:26:50,450|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:26:50,452|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:26:50,454|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:26:50,465|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:26:56,757|INFO|looper.py|Starting up indy-node
+2025-09-04 06:26:56,930|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:56,990|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:57,142|INFO|ledger.py|Recovered tree in 0.15183980999972846 seconds
+2025-09-04 06:26:57,322|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:57,401|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:57,596|INFO|ledger.py|Recovered tree in 0.1950065059991175 seconds
+2025-09-04 06:26:57,847|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:57,929|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:58,110|INFO|ledger.py|Recovered tree in 0.18129962100101693 seconds
+2025-09-04 06:26:58,111|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:26:58,354|INFO|ledger.py|Starting ledger...
+2025-09-04 06:26:58,438|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:26:58,661|INFO|ledger.py|Recovered tree in 0.22273842799950216 seconds
+2025-09-04 06:26:59,233|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:26:59,250|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:59,268|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:26:59,365|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:26:59,366|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:26:59,394|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:59,395|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:59,396|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:59,397|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:26:59,398|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:26:59,400|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:26:59,401|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:26:59,405|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:26:59,406|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:26:59,406|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:26:59,408|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:26:59,409|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:26:59,420|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.
+2025-09-04 06:27:07,001|INFO|looper.py|Starting up indy-node
+2025-09-04 06:27:07,314|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:07,405|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:07,633|INFO|ledger.py|Recovered tree in 0.2278327559997706 seconds
+2025-09-04 06:27:07,878|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:07,969|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:08,206|INFO|ledger.py|Recovered tree in 0.2367125370001304 seconds
+2025-09-04 06:27:08,437|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:08,517|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:08,714|INFO|ledger.py|Recovered tree in 0.1969253450006363 seconds
+2025-09-04 06:27:08,715|NOTIFICATION|genesis_txn_initiator_from_file.py|File that should be used for initialization of Ledger does not exist: /var/lib/indy/UCSM/domain_transactions_genesis
+2025-09-04 06:27:08,956|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:09,031|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:09,231|INFO|ledger.py|Recovered tree in 0.1996822749988496 seconds
+2025-09-04 06:27:09,771|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:27:09,789|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:27:09,806|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:27:09,907|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:27:09,907|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:27:09,941|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:09,942|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:09,942|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:09,943|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:09,944|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:27:09,945|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:27:09,946|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:27:09,949|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:27:09,951|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:27:09,952|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:27:09,953|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:27:09,954|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:27:09,965|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:27:18,336|INFO|looper.py|Starting up indy-node
+2025-09-04 06:27:18,550|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:18,622|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:18,847|INFO|ledger.py|Recovered tree in 0.22480331000042497 seconds
+2025-09-04 06:27:19,098|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:19,196|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:19,456|INFO|ledger.py|Recovered tree in 0.2599777940013155 seconds
+2025-09-04 06:27:19,713|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:19,796|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:20,016|INFO|ledger.py|Recovered tree in 0.21981857599894283 seconds
+2025-09-04 06:27:20,348|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:20,436|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:20,660|INFO|ledger.py|Recovered tree in 0.22351999500097008 seconds
+2025-09-04 06:27:21,563|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:27:21,626|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:27:21,692|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:27:21,869|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:27:21,869|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:27:21,908|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:21,909|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:21,910|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:21,912|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:21,912|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:27:21,914|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:27:21,915|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:27:21,921|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:27:21,922|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:27:21,923|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:27:21,924|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:27:21,926|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:27:21,937|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:27:29,466|INFO|looper.py|Starting up indy-node
+2025-09-04 06:27:29,671|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:29,737|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:29,907|INFO|ledger.py|Recovered tree in 0.16930935100026545 seconds
+2025-09-04 06:27:30,106|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:30,194|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:30,398|INFO|ledger.py|Recovered tree in 0.20475684400116734 seconds
+2025-09-04 06:27:30,625|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:30,703|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:30,879|INFO|ledger.py|Recovered tree in 0.1754398699995363 seconds
+2025-09-04 06:27:31,130|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:31,215|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:31,417|INFO|ledger.py|Recovered tree in 0.20172604100116587 seconds
+2025-09-04 06:27:32,010|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:27:32,032|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:27:32,051|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:27:32,164|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:27:32,165|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:27:32,218|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:32,219|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:32,220|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:32,221|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:32,222|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:27:32,223|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:27:32,225|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:27:32,228|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:27:32,229|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:27:32,229|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:27:32,230|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:27:32,231|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:27:32,243|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:27:38,494|INFO|looper.py|Starting up indy-node
+2025-09-04 06:27:38,757|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:38,843|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:39,020|INFO|ledger.py|Recovered tree in 0.17661573699842847 seconds
+2025-09-04 06:27:39,316|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:39,485|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:39,773|INFO|ledger.py|Recovered tree in 0.287586716000078 seconds
+2025-09-04 06:27:40,031|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:40,119|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:40,335|INFO|ledger.py|Recovered tree in 0.21585328800028947 seconds
+2025-09-04 06:27:40,615|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:40,691|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:41,052|INFO|ledger.py|Recovered tree in 0.3609199990005436 seconds
+2025-09-04 06:27:41,723|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:27:41,750|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:27:41,773|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:27:41,930|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:27:41,933|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:27:41,993|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:41,994|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:41,995|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:41,996|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:27:41,999|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:27:42,002|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 0, allNodeNames set(), requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 0, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(0), 'propagate': Quorum(1), 'prepare': Quorum(-1), 'commit': Quorum(0), 'reply': Quorum(1), 'view_change': Quorum(0), 'election': Quorum(0), 'view_change_ack': Quorum(-1), 'view_change_done': Quorum(0), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(-1), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(-1), 'timestamp': Quorum(1), 'bls_signatures': Quorum(0), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:27:42,005|INFO|consensus_shared_data.py|Node1:0 updated validators list to []
+2025-09-04 06:27:42,010|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:27:42,011|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:27:42,012|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:27:42,016|INFO|consensus_shared_data.py|Node1:0 updated validators list to set()
+2025-09-04 06:27:42,018|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:27:42,030|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:27:49,898|INFO|looper.py|Starting up indy-node
+2025-09-04 06:27:50,084|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:50,150|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:50,346|INFO|ledger.py|Recovered tree in 0.19607721400097944 seconds
+2025-09-04 06:27:50,545|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:50,631|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:50,860|INFO|ledger.py|Recovered tree in 0.22897207399910258 seconds
+2025-09-04 06:27:50,878|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:27:50,889|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:27:59,037|INFO|looper.py|Starting up indy-node
+2025-09-04 06:27:59,295|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:59,384|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:27:59,596|INFO|ledger.py|Recovered tree in 0.21189610399960657 seconds
+2025-09-04 06:27:59,814|INFO|ledger.py|Starting ledger...
+2025-09-04 06:27:59,889|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:28:00,118|INFO|ledger.py|Recovered tree in 0.2294711760005157 seconds
+2025-09-04 06:28:00,123|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:28:00,134|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:28:07,019|INFO|looper.py|Starting up indy-node
+2025-09-04 06:28:07,232|INFO|ledger.py|Starting ledger...
+2025-09-04 06:28:07,303|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:28:07,502|INFO|ledger.py|Recovered tree in 0.19846766100090463 seconds
+2025-09-04 06:28:07,715|INFO|ledger.py|Starting ledger...
+2025-09-04 06:28:07,850|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:28:08,085|INFO|ledger.py|Recovered tree in 0.23471886500010442 seconds
+2025-09-04 06:28:08,090|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:28:08,101|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:28:16,185|INFO|looper.py|Starting up indy-node
+2025-09-04 06:28:16,373|INFO|ledger.py|Starting ledger...
+2025-09-04 06:28:16,435|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:28:16,605|INFO|ledger.py|Recovered tree in 0.17025567599921487 seconds
+2025-09-04 06:28:16,789|INFO|ledger.py|Starting ledger...
+2025-09-04 06:28:16,852|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:28:17,061|INFO|ledger.py|Recovered tree in 0.2090240690013161 seconds
+2025-09-04 06:28:17,065|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:28:17,076|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:30:40,631|INFO|looper.py|Starting up indy-node
+2025-09-04 06:30:40,833|INFO|ledger.py|Starting ledger...
+2025-09-04 06:30:40,901|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:30:41,081|INFO|ledger.py|Recovered tree in 0.1797779940006876 seconds
+2025-09-04 06:30:41,337|INFO|ledger.py|Starting ledger...
+2025-09-04 06:30:41,404|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:30:41,616|INFO|ledger.py|Recovered tree in 0.21222361900072428 seconds
+2025-09-04 06:30:41,620|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:30:41,631|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.
+2025-09-04 06:30:47,271|INFO|looper.py|Starting up indy-node
+2025-09-04 06:30:47,457|INFO|ledger.py|Starting ledger...
+2025-09-04 06:30:47,524|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:30:47,705|INFO|ledger.py|Recovered tree in 0.18053802400027052 seconds
+2025-09-04 06:30:47,916|INFO|ledger.py|Starting ledger...
+2025-09-04 06:30:47,994|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:30:48,225|INFO|ledger.py|Recovered tree in 0.2310478610015707 seconds
+2025-09-04 06:30:48,231|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:30:48,242|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:30:53,629|INFO|looper.py|Starting up indy-node
+2025-09-04 06:30:53,835|INFO|ledger.py|Starting ledger...
+2025-09-04 06:30:53,902|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:30:54,084|INFO|ledger.py|Recovered tree in 0.1822248930002388 seconds
+2025-09-04 06:30:54,283|INFO|ledger.py|Starting ledger...
+2025-09-04 06:30:54,357|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:30:54,566|INFO|ledger.py|Recovered tree in 0.20968256199921598 seconds
+2025-09-04 06:30:54,572|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:30:54,582|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:30:59,990|INFO|looper.py|Starting up indy-node
+2025-09-04 06:31:00,219|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:00,290|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:00,492|INFO|ledger.py|Recovered tree in 0.2025070939998841 seconds
+2025-09-04 06:31:00,785|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:00,897|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:01,149|INFO|ledger.py|Recovered tree in 0.2524928410002758 seconds
+2025-09-04 06:31:01,155|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:31:01,166|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:31:08,986|INFO|looper.py|Starting up indy-node
+2025-09-04 06:31:09,231|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:09,315|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:09,504|INFO|ledger.py|Recovered tree in 0.18963581000025442 seconds
+2025-09-04 06:31:09,723|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:09,796|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:10,022|INFO|ledger.py|Recovered tree in 0.2259991999999329 seconds
+2025-09-04 06:31:10,028|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:31:10,039|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:31:16,914|INFO|looper.py|Starting up indy-node
+2025-09-04 06:31:17,123|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:17,185|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:17,375|INFO|ledger.py|Recovered tree in 0.18926786300107779 seconds
+2025-09-04 06:31:17,603|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:17,689|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:17,913|INFO|ledger.py|Recovered tree in 0.22415561199886724 seconds
+2025-09-04 06:31:17,918|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:31:17,928|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:31:25,386|INFO|looper.py|Starting up indy-node
+2025-09-04 06:31:25,554|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:25,614|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:25,774|INFO|ledger.py|Recovered tree in 0.16062227900147263 seconds
+2025-09-04 06:31:25,965|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:26,099|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:26,275|INFO|ledger.py|Recovered tree in 0.17673962600019877 seconds
+2025-09-04 06:31:26,279|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:31:26,290|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:31:37,471|INFO|looper.py|Starting up indy-node
+2025-09-04 06:31:37,653|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:37,713|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:37,862|INFO|ledger.py|Recovered tree in 0.1492656079990411 seconds
+2025-09-04 06:31:38,015|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:38,075|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:38,253|INFO|ledger.py|Recovered tree in 0.1776507020003919 seconds
+2025-09-04 06:31:38,256|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:31:38,267|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.
+2025-09-04 06:31:55,066|INFO|looper.py|Starting up indy-node
+2025-09-04 06:31:55,279|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:55,358|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:55,532|INFO|ledger.py|Recovered tree in 0.17340956799853302 seconds
+2025-09-04 06:31:55,719|INFO|ledger.py|Starting ledger...
+2025-09-04 06:31:55,782|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:31:55,936|INFO|ledger.py|Recovered tree in 0.1539971929996682 seconds
+2025-09-04 06:31:55,942|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:31:55,953|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:32:27,612|INFO|looper.py|Starting up indy-node
+2025-09-04 06:32:27,878|INFO|ledger.py|Starting ledger...
+2025-09-04 06:32:27,946|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:32:28,182|INFO|ledger.py|Recovered tree in 0.23618172500027867 seconds
+2025-09-04 06:32:28,407|INFO|ledger.py|Starting ledger...
+2025-09-04 06:32:28,476|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:32:28,798|INFO|ledger.py|Recovered tree in 0.32189905399900454 seconds
+2025-09-04 06:32:28,803|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:32:28,815|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:33:25,369|INFO|looper.py|Starting up indy-node
+2025-09-04 06:33:25,561|INFO|ledger.py|Starting ledger...
+2025-09-04 06:33:25,642|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:33:25,847|INFO|ledger.py|Recovered tree in 0.2045874969990109 seconds
+2025-09-04 06:33:26,081|INFO|ledger.py|Starting ledger...
+2025-09-04 06:33:26,188|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:33:26,456|INFO|ledger.py|Recovered tree in 0.2680716009999742 seconds
+2025-09-04 06:33:26,460|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:33:26,471|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:34:31,303|INFO|looper.py|Starting up indy-node
+2025-09-04 06:34:31,499|INFO|ledger.py|Starting ledger...
+2025-09-04 06:34:31,560|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:34:31,727|INFO|ledger.py|Recovered tree in 0.16612818099929427 seconds
+2025-09-04 06:34:31,909|INFO|ledger.py|Starting ledger...
+2025-09-04 06:34:31,981|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:34:32,190|INFO|ledger.py|Recovered tree in 0.2084407710008236 seconds
+2025-09-04 06:34:32,195|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:34:32,206|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:35:36,439|INFO|looper.py|Starting up indy-node
+2025-09-04 06:35:36,606|INFO|ledger.py|Starting ledger...
+2025-09-04 06:35:36,672|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:35:36,835|INFO|ledger.py|Recovered tree in 0.16235241899994435 seconds
+2025-09-04 06:35:36,992|INFO|ledger.py|Starting ledger...
+2025-09-04 06:35:37,047|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:35:37,228|INFO|ledger.py|Recovered tree in 0.18177007200029038 seconds
+2025-09-04 06:35:37,232|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:35:37,243|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:36:42,108|INFO|looper.py|Starting up indy-node
+2025-09-04 06:36:42,275|INFO|ledger.py|Starting ledger...
+2025-09-04 06:36:42,328|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:36:42,465|INFO|ledger.py|Recovered tree in 0.1370770600005926 seconds
+2025-09-04 06:36:42,644|INFO|ledger.py|Starting ledger...
+2025-09-04 06:36:42,717|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:36:42,934|INFO|ledger.py|Recovered tree in 0.2170983880005224 seconds
+2025-09-04 06:36:42,938|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:36:42,949|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:37:47,822|INFO|looper.py|Starting up indy-node
+2025-09-04 06:37:48,029|INFO|ledger.py|Starting ledger...
+2025-09-04 06:37:48,105|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:37:48,291|INFO|ledger.py|Recovered tree in 0.18560887900093803 seconds
+2025-09-04 06:37:48,467|INFO|ledger.py|Starting ledger...
+2025-09-04 06:37:48,546|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:37:48,766|INFO|ledger.py|Recovered tree in 0.22029543899952841 seconds
+2025-09-04 06:37:48,773|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:37:48,784|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:38:54,382|INFO|looper.py|Starting up indy-node
+2025-09-04 06:38:54,548|INFO|ledger.py|Starting ledger...
+2025-09-04 06:38:54,602|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:38:54,785|INFO|ledger.py|Recovered tree in 0.18307640099919809 seconds
+2025-09-04 06:38:54,972|INFO|ledger.py|Starting ledger...
+2025-09-04 06:38:55,052|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:38:55,247|INFO|ledger.py|Recovered tree in 0.19481541300046956 seconds
+2025-09-04 06:38:55,252|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:38:55,264|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.
+2025-09-04 06:40:00,162|INFO|looper.py|Starting up indy-node
+2025-09-04 06:40:00,360|INFO|ledger.py|Starting ledger...
+2025-09-04 06:40:00,426|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:40:00,604|INFO|ledger.py|Recovered tree in 0.1788988660009636 seconds
+2025-09-04 06:40:00,816|INFO|ledger.py|Starting ledger...
+2025-09-04 06:40:00,894|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:40:01,071|INFO|ledger.py|Recovered tree in 0.17777033499987738 seconds
+2025-09-04 06:40:01,075|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:40:01,086|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:41:05,093|INFO|looper.py|Starting up indy-node
+2025-09-04 06:41:05,291|INFO|ledger.py|Starting ledger...
+2025-09-04 06:41:05,375|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:41:05,661|INFO|ledger.py|Recovered tree in 0.28885911399993347 seconds
+2025-09-04 06:41:05,929|INFO|ledger.py|Starting ledger...
+2025-09-04 06:41:06,016|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:41:06,210|INFO|ledger.py|Recovered tree in 0.19359326300036628 seconds
+2025-09-04 06:41:06,213|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:41:06,224|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:42:12,206|INFO|looper.py|Starting up indy-node
+2025-09-04 06:42:12,416|INFO|ledger.py|Starting ledger...
+2025-09-04 06:42:12,470|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:42:12,633|INFO|ledger.py|Recovered tree in 0.16284578699924168 seconds
+2025-09-04 06:42:12,818|INFO|ledger.py|Starting ledger...
+2025-09-04 06:42:12,879|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:42:13,085|INFO|ledger.py|Recovered tree in 0.20583390699903248 seconds
+2025-09-04 06:42:13,089|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:42:13,100|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.
+2025-09-04 06:43:20,879|INFO|looper.py|Starting up indy-node
+2025-09-04 06:43:21,209|INFO|ledger.py|Starting ledger...
+2025-09-04 06:43:21,276|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:43:21,437|INFO|ledger.py|Recovered tree in 0.16062439599954814 seconds
+2025-09-04 06:43:21,645|INFO|ledger.py|Starting ledger...
+2025-09-04 06:43:21,715|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:43:21,908|INFO|ledger.py|Recovered tree in 0.19389492499976768 seconds
+2025-09-04 06:43:21,912|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:43:21,923|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.
+2025-09-04 06:44:26,374|INFO|looper.py|Starting up indy-node
+2025-09-04 06:44:26,603|INFO|ledger.py|Starting ledger...
+2025-09-04 06:44:26,714|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:44:26,893|INFO|ledger.py|Recovered tree in 0.17924525899979926 seconds
+2025-09-04 06:44:27,118|INFO|ledger.py|Starting ledger...
+2025-09-04 06:44:27,197|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:44:27,419|INFO|ledger.py|Recovered tree in 0.22214921200065874 seconds
+2025-09-04 06:44:27,424|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:44:27,435|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:45:35,540|INFO|looper.py|Starting up indy-node
+2025-09-04 06:45:35,818|INFO|ledger.py|Starting ledger...
+2025-09-04 06:45:35,921|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:45:36,163|INFO|ledger.py|Recovered tree in 0.24156356999992568 seconds
+2025-09-04 06:45:36,431|INFO|ledger.py|Starting ledger...
+2025-09-04 06:45:36,509|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:45:36,862|INFO|ledger.py|Recovered tree in 0.35318751399972825 seconds
+2025-09-04 06:45:36,867|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:45:36,878|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:46:42,613|INFO|looper.py|Starting up indy-node
+2025-09-04 06:46:42,893|INFO|ledger.py|Starting ledger...
+2025-09-04 06:46:42,967|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:46:43,172|INFO|ledger.py|Recovered tree in 0.20490270399932342 seconds
+2025-09-04 06:46:43,397|INFO|ledger.py|Starting ledger...
+2025-09-04 06:46:43,477|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:46:43,705|INFO|ledger.py|Recovered tree in 0.22804278900002828 seconds
+2025-09-04 06:46:43,711|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:46:43,722|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:47:49,791|INFO|looper.py|Starting up indy-node
+2025-09-04 06:47:50,025|INFO|ledger.py|Starting ledger...
+2025-09-04 06:47:50,107|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:47:50,255|INFO|ledger.py|Recovered tree in 0.1475180180004827 seconds
+2025-09-04 06:47:50,462|INFO|ledger.py|Starting ledger...
+2025-09-04 06:47:50,548|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:47:50,868|INFO|ledger.py|Recovered tree in 0.3199288470004831 seconds
+2025-09-04 06:47:50,872|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:47:50,883|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:48:56,710|INFO|looper.py|Starting up indy-node
+2025-09-04 06:48:57,041|INFO|ledger.py|Starting ledger...
+2025-09-04 06:48:57,103|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:48:57,263|INFO|ledger.py|Recovered tree in 0.1601939409993065 seconds
+2025-09-04 06:48:57,501|INFO|ledger.py|Starting ledger...
+2025-09-04 06:48:57,594|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:48:57,834|INFO|ledger.py|Recovered tree in 0.24022870599947055 seconds
+2025-09-04 06:48:58,080|INFO|ledger.py|Starting ledger...
+2025-09-04 06:48:58,158|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:48:58,397|INFO|ledger.py|Recovered tree in 0.2391022170013457 seconds
+2025-09-04 06:48:58,413|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:48:58,423|NOTIFICATION|looper.py|Looper shut down in 0.010 seconds.
+2025-09-04 06:50:04,505|INFO|looper.py|Starting up indy-node
+2025-09-04 06:50:04,782|INFO|ledger.py|Starting ledger...
+2025-09-04 06:50:04,859|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:50:05,077|INFO|ledger.py|Recovered tree in 0.2183063159991434 seconds
+2025-09-04 06:50:05,349|INFO|ledger.py|Starting ledger...
+2025-09-04 06:50:05,459|INFO|ledger.py|Recovering tree from hash store of size 1
+2025-09-04 06:50:05,479|INFO|ledger.py|Recovered tree in 0.019537415999366203 seconds
+2025-09-04 06:50:05,753|INFO|ledger.py|Starting ledger...
+2025-09-04 06:50:05,860|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:50:06,069|INFO|ledger.py|Recovered tree in 0.20957205100057763 seconds
+2025-09-04 06:50:06,074|NOTIFICATION|looper.py|Looper shutting down now...
+2025-09-04 06:50:06,085|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.

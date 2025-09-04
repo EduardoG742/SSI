@@ -1,5 +1,5 @@
 # Current network
-NETWORK_NAME = "ssi4de"
+NETWORK_NAME = "UCSM"
 
 # Directory to store ledger.
 LEDGER_DIR = '/var/lib/indy'
