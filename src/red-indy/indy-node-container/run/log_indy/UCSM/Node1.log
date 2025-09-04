@@ -826,3 +826,53 @@
 2025-09-04 06:50:06,069|INFO|ledger.py|Recovered tree in 0.20957205100057763 seconds
 2025-09-04 06:50:06,074|NOTIFICATION|looper.py|Looper shutting down now...
 2025-09-04 06:50:06,085|NOTIFICATION|looper.py|Looper shut down in 0.011 seconds.
+2025-09-04 06:51:10,549|INFO|looper.py|Starting up indy-node
+2025-09-04 06:51:10,713|INFO|ledger.py|Starting ledger...
+2025-09-04 06:51:10,773|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:51:10,934|INFO|ledger.py|Recovered tree in 0.1614498620001541 seconds
+2025-09-04 06:51:11,085|INFO|ledger.py|Starting ledger...
+2025-09-04 06:51:11,150|INFO|ledger.py|Recovering tree from hash store of size 1
+2025-09-04 06:51:11,165|INFO|ledger.py|Recovered tree in 0.015753245001178584 seconds
+2025-09-04 06:51:11,338|INFO|ledger.py|Starting ledger...
+2025-09-04 06:51:11,424|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:51:11,615|INFO|ledger.py|Recovered tree in 0.19139922899921658 seconds
+2025-09-04 06:51:11,832|INFO|ledger.py|Starting ledger...
+2025-09-04 06:51:11,911|INFO|ledger.py|Recovering tree from transaction log
+2025-09-04 06:51:12,102|INFO|ledger.py|Recovered tree in 0.19171095300043817 seconds
+2025-09-04 06:51:12,606|NOTIFICATION|node_bootstrap.py|BLS: BLS Signatures will be used for Node Node1
+2025-09-04 06:51:12,607|INFO|pool_manager.py|Node1 sets node Node1 (5gaw7oSy62phsjY44tgYdGBnfj3N1dDSCoDZtU5ogVZg) order to 5
+2025-09-04 06:51:12,686|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:51:12,700|INFO|notifier_plugin_manager.py|Found notifier plugins: []
+2025-09-04 06:51:12,796|INFO|stacks.py|Node1C: clients connections tracking is enabled.
+2025-09-04 06:51:12,796|INFO|stacks.py|Node1C: client stack restart is enabled.
+2025-09-04 06:51:12,827|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin.stats_consumer.stats_publisher.StatsPublisher'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:51:12,828|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <enum 'Topic'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:51:12,828|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.plugin_loader.HasDynamicallyImportedModules'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:51:12,829|NOTIFICATION|plugin_loader.py|skipping plugin plugin_firebase_stats_consumer[class: <class 'plenum.server.stats_consumer.StatsConsumer'>] because it does not have a 'pluginType' attribute
+2025-09-04 06:51:12,829|INFO|plugin_loader.py|plugin FirebaseStatsConsumer successfully loaded from module plugin_firebase_stats_consumer
+2025-09-04 06:51:12,830|INFO|node.py|Node1 updated its pool parameters: f 0, totalNodes 1, allNodeNames {'Node1'}, requiredNumberOfInstances 1, minimumNodes 1, quorums {'n': 1, 'f': 0, 'weak': Quorum(1), 'strong': Quorum(1), 'propagate': Quorum(1), 'prepare': Quorum(0), 'commit': Quorum(1), 'reply': Quorum(1), 'view_change': Quorum(1), 'election': Quorum(1), 'view_change_ack': Quorum(0), 'view_change_done': Quorum(1), 'same_consistency_proof': Quorum(1), 'consistency_proof': Quorum(1), 'ledger_status': Quorum(0), 'ledger_status_last_3PC': Quorum(1), 'checkpoint': Quorum(0), 'timestamp': Quorum(1), 'bls_signatures': Quorum(1), 'observer_data': Quorum(1), 'backup_instance_faulty': Quorum(1)}
+2025-09-04 06:51:12,831|INFO|consensus_shared_data.py|Node1:0 updated validators list to ['Node1']
+2025-09-04 06:51:12,834|INFO|primary_connection_monitor_service.py|Node1:0 scheduling primary connection check in 60 sec
+2025-09-04 06:51:12,834|NOTIFICATION|replicas.py|Node1 added replica Node1:0 to instance 0 (master)
+2025-09-04 06:51:12,835|INFO|replicas.py|reset monitor due to replica addition
+2025-09-04 06:51:12,836|INFO|consensus_shared_data.py|Node1:0 updated validators list to {'Node1'}
+2025-09-04 06:51:12,836|INFO|replica.py|Node1:0 setting primaryName for view no 0 to: Node1:0
+2025-09-04 06:51:12,836|NOTIFICATION|primary_connection_monitor_service.py|Node1:0 restored connection to primary of master
+2025-09-04 06:51:12,837|NOTIFICATION|node.py|PRIMARY SELECTION:  selected primary Node1:0 for instance 0 (view 0)
+2025-09-04 06:51:12,839|INFO|node.py|total plugins loaded in node: 0
+2025-09-04 06:51:12,845|INFO|ledgers_bootstrap.py|<indy_node.server.node_bootstrap.NodeBootstrap object at 0x709fde657b80> found state to be empty, recreating from ledger 0
+2025-09-04 06:51:12,847|INFO|ledgers_bootstrap.py|<indy_node.server.node_bootstrap.NodeBootstrap object at 0x709fde657b80> initialized state for ledger 0: state root GouywUZBXaJ9YCZ3oaSDpFhFnvSLT4cewWvVfbpNNLBX
+2025-09-04 06:51:12,848|INFO|ledgers_bootstrap.py|<indy_node.server.node_bootstrap.NodeBootstrap object at 0x709fde657b80> found state to be empty, recreating from ledger 2
+2025-09-04 06:51:12,848|INFO|ledgers_bootstrap.py|<indy_node.server.node_bootstrap.NodeBootstrap object at 0x709fde657b80> initialized state for ledger 2: state root DfNLmH4DAHTKv63YPFJzuRdeEtVwF5RtVnvKYHd8iLEA
+2025-09-04 06:51:12,849|INFO|ledgers_bootstrap.py|<indy_node.server.node_bootstrap.NodeBootstrap object at 0x709fde657b80> found state to be empty, recreating from ledger 1
+2025-09-04 06:51:12,851|INFO|ledgers_bootstrap.py|<indy_node.server.node_bootstrap.NodeBootstrap object at 0x709fde657b80> initialized state for ledger 1: state root 7wWG3PrK4VyRXwx58Bkux6bTKqPUxuguCAnrSKEiTYaB
+2025-09-04 06:51:12,852|INFO|motor.py|Node1 changing status from stopped to starting
+2025-09-04 06:51:12,912|INFO|zstack.py|Node1 will bind its listener at 0.0.0.0:9701
+2025-09-04 06:51:12,913|INFO|stacks.py|CONNECTION: Node1 listening for other nodes at 0.0.0.0:9701
+2025-09-04 06:51:12,929|INFO|zstack.py|Node1C will bind its listener at 0.0.0.0:9702
+2025-09-04 06:51:13,019|INFO|node.py|Node1 first time running...
+2025-09-04 06:51:13,020|INFO|node.py|Node1 processed 0 Ordered batches for instance 0 before starting catch up
+2025-09-04 06:51:13,020|INFO|ordering_service.py|Node1:0 reverted 0 batches before starting catch up
+2025-09-04 06:51:13,021|INFO|node_leecher_service.py|Node1:NodeLeecherService starting catchup (is_initial=True)
+2025-09-04 06:51:13,021|INFO|node_leecher_service.py|Node1:NodeLeecherService transitioning from Idle to PreSyncingPool
+2025-09-04 06:51:13,021|INFO|cons_proof_service.py|Node1:ConsProofService:0 starts
